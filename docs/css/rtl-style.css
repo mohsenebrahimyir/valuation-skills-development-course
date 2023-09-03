@@ -435,3 +435,17 @@ div.csl-right-inline {
     margin-left: 0;
     padding-left: 0;
 }
+
+
+/* DT datatable ------------------------------- */
+
+button.dt-button, div.dt-button, a.dt-button, input.dt-button {
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(63, 138, 53);
+}
+
+button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled), input.dt-button:hover:not(.disabled) {
+    border: 1px solid #666;
+    background-color: black;
+}
