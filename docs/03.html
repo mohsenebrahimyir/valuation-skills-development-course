@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>توسعه مهارت‌های ارزشگذاری - 3&nbsp; تحلیل و ارزشگذاری سیمان اردستان-۲</title>
+<title>توسعه مهارت‌های ارزشگذاری - 3&nbsp; اردستان-۲</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -75,6 +94,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.28/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.4/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.13.4/jszip.min.js"></script>
+<link href="site_libs/dt-ext-buttons-1.13.4/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="site_libs/dt-ext-buttons-1.13.4/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.13.4/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.13.4/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.13.4/js/buttons.print.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="site_libs/htmltools-fill-0.5.5/fill.css" rel="stylesheet">
+<script src="site_libs/bslib-webComponents-js-0.5.1/webComponents.min.js" type="module"></script>
+<script src="site_libs/bslib-tag-require-0.5.1/tag-require.js"></script>
+<script src="site_libs/bslib-card-js-0.5.1/card.min.js"></script>
+<link href="site_libs/bslib-card-styles-0.5.1/card.css" rel="stylesheet">
+<script src="site_libs/plotly-binding-4.10.2/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<script src="site_libs/viz-1.8.2/viz.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="site_libs/grViz-binding-1.0.10/grViz.js"></script>
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&amp;display=swap">
@@ -92,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۲</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">اردستان-۲</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="ناوبری نوار کناری را تغییر دهید" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -147,19 +193,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۱</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">اردستان-۱</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۲</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">اردستان-۲</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۳</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">اردستان-۳</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -189,15 +235,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">فهرست مطالب</h2>
    
   <ul>
-  <li><a href="#کلیپ-معرفی-شرکت-سیمان-اردستان" id="toc-کلیپ-معرفی-شرکت-سیمان-اردستان" class="nav-link active" data-scroll-target="#کلیپ-معرفی-شرکت-سیمان-اردستان"><span class="header-section-number">3.1</span> کلیپ معرفی شرکت سیمان اردستان</a>
+  <li><a href="#معرفی-شرکت-سیمان-اردستان" id="toc-معرفی-شرکت-سیمان-اردستان" class="nav-link active" data-scroll-target="#معرفی-شرکت-سیمان-اردستان"><span class="header-section-number">3.1</span> معرفی شرکت سیمان اردستان</a></li>
+  <li><a href="#تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات" id="toc-تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات" class="nav-link" data-scroll-target="#تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات"><span class="header-section-number">3.2</span> تحلیل تاریخی و برآورد درآمد فروش (نرخ محصولات)</a>
   <ul class="collapse">
-  <li><a href="#تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات" id="toc-تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات" class="nav-link" data-scroll-target="#تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات"><span class="header-section-number">3.1.1</span> تحلیل تاریخی و برآورد درآمد فروش (نرخ محصولات)</a></li>
+  <li><a href="#انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور" id="toc-انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور" class="nav-link" data-scroll-target="#انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور"><span class="header-section-number">3.2.1</span> انتقال تجربیات ارزشگذاری در بازار سرمایه کشور</a></li>
   </ul></li>
-  <li><a href="#تکلیف-جلسه-سوم" id="toc-تکلیف-جلسه-سوم" class="nav-link" data-scroll-target="#تکلیف-جلسه-سوم">تکلیف جلسه سوم</a>
+  <li><a href="#تحلیل-عملکرد-تاریخی-اردستان" id="toc-تحلیل-عملکرد-تاریخی-اردستان" class="nav-link" data-scroll-target="#تحلیل-عملکرد-تاریخی-اردستان"><span class="header-section-number">3.3</span> تحلیل عملکرد تاریخی اردستان</a></li>
+  <li><a href="#تحلیل-مقدار-فروش-تاریخی-اردستان" id="toc-تحلیل-مقدار-فروش-تاریخی-اردستان" class="nav-link" data-scroll-target="#تحلیل-مقدار-فروش-تاریخی-اردستان"><span class="header-section-number">3.4</span> تحلیل مقدار فروش تاریخی اردستان</a></li>
+  <li><a href="#تحلیل-نرخ-فروش-تاریخی-اردستان" id="toc-تحلیل-نرخ-فروش-تاریخی-اردستان" class="nav-link" data-scroll-target="#تحلیل-نرخ-فروش-تاریخی-اردستان"><span class="header-section-number">3.5</span> تحلیل نرخ فروش تاریخی اردستان</a></li>
+  <li><a href="#تحلیل-تاریخی-مبغ-فروش" id="toc-تحلیل-تاریخی-مبغ-فروش" class="nav-link" data-scroll-target="#تحلیل-تاریخی-مبغ-فروش"><span class="header-section-number">3.6</span> تحلیل تاریخی مبغ فروش</a></li>
+  <li><a href="#مفروضات-برآورد-صورت-سود-و-زیان-شرکت" id="toc-مفروضات-برآورد-صورت-سود-و-زیان-شرکت" class="nav-link" data-scroll-target="#مفروضات-برآورد-صورت-سود-و-زیان-شرکت"><span class="header-section-number">3.7</span> مفروضات برآورد صورت سود و زیان شرکت</a></li>
+  <li><a href="#شیوه-کلان-تحلیل-درآمد-فروش-در-شرکتهای-بازار-سرمایه-کشور" id="toc-شیوه-کلان-تحلیل-درآمد-فروش-در-شرکتهای-بازار-سرمایه-کشور" class="nav-link" data-scroll-target="#شیوه-کلان-تحلیل-درآمد-فروش-در-شرکتهای-بازار-سرمایه-کشور"><span class="header-section-number">3.8</span> شیوه کلان تحلیل درآمد فروش در شرکت‌های بازار سرمایه کشور</a>
   <ul class="collapse">
-  <li><a href="#اجباری" id="toc-اجباری" class="nav-link" data-scroll-target="#اجباری"><span class="header-section-number">3.1.2</span> اجباری</a></li>
-  <li><a href="#اختیاری" id="toc-اختیاری" class="nav-link" data-scroll-target="#اختیاری"><span class="header-section-number">3.1.3</span> اختیاری</a></li>
+  <li><a href="#انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور-1" id="toc-انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور-1" class="nav-link" data-scroll-target="#انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور-1"><span class="header-section-number">3.8.1</span> انتقال تجربیات ارزشگذاری در بازار سرمایه کشور</a></li>
   </ul></li>
+  <li><a href="#رابطه-درآمد-فروش-و-هزینهها-و-داراییها" id="toc-رابطه-درآمد-فروش-و-هزینهها-و-داراییها" class="nav-link" data-scroll-target="#رابطه-درآمد-فروش-و-هزینهها-و-داراییها"><span class="header-section-number">3.9</span> رابطه درآمد فروش و هزینه‌ها و دارایی‌ها</a>
+  <ul class="collapse">
+  <li><a href="#شیوه-کلان-تحلیل-هزینهها-در-شرکتهای-بازار-سرمایه-کشور" id="toc-شیوه-کلان-تحلیل-هزینهها-در-شرکتهای-بازار-سرمایه-کشور" class="nav-link" data-scroll-target="#شیوه-کلان-تحلیل-هزینهها-در-شرکتهای-بازار-سرمایه-کشور"><span class="header-section-number">3.9.1</span> شیوه کلان تحلیل هزینه‌ها در شرکت‌های بازار سرمایه کشور</a></li>
+  <li><a href="#بهای-تمام-شده-کالای-فروش-رفته-شرکتهای-تولیدی" id="toc-بهای-تمام-شده-کالای-فروش-رفته-شرکتهای-تولیدی" class="nav-link" data-scroll-target="#بهای-تمام-شده-کالای-فروش-رفته-شرکتهای-تولیدی"><span class="header-section-number">3.9.2</span> بهای تمام شده کالای فروش رفته شرکت‌های تولیدی</a></li>
+  </ul></li>
+  <li><a href="#تکلیف-جلسه-سوم" id="toc-تکلیف-جلسه-سوم" class="nav-link" data-scroll-target="#تکلیف-جلسه-سوم">تکلیف جلسه سوم</a></li>
   </ul>
 </nav>
     </div>
@@ -206,7 +263,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۲</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">اردستان-۲</span></h1>
 </div>
 
 
@@ -218,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">اصلاح شده</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-09-03</p>
+      <p class="date-modified">2023-09-24</p>
     </div>
   </div>
     
@@ -228,31 +285,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="کلیپ-معرفی-شرکت-سیمان-اردستان" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="کلیپ-معرفی-شرکت-سیمان-اردستان"><span class="header-section-number">3.1</span> کلیپ معرفی شرکت سیمان اردستان</h2>
+<section id="معرفی-شرکت-سیمان-اردستان" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="معرفی-شرکت-سیمان-اردستان"><span class="header-section-number">3.1</span> معرفی شرکت سیمان اردستان</h2>
+<div class="definition">
+<p>شاخص‌های مهم شرکت سیمان اردستان:</p>
+<ul>
+<li>داشتن معدن با ظرفیت و عیار خاک خوب</li>
+<li>نزدیکی به معدن</li>
+<li>سال‌های اختیارات و حق برداشت از معدن</li>
+<li>تجهیزات خط تولید</li>
+<li>نزدیکی به جاده</li>
+<li>نزدیک به بازار مصرف داخلی و صادراتی</li>
+</ul>
 <div class="center">
-<style>.h_iframe-aparat_embed_frame{position:relative;}.h_iframe-aparat_embed_frame .ratio{display:block;width:100%;height:auto;}.h_iframe-aparat_embed_frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;}</style>
 <div class="h_iframe-aparat_embed_frame">
 <span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/LC5q8/vt/frame" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
 </div>
+<hr>
 </div>
-<p>مزیت‌های شرکت سیمان اردستان:</p>
+</div>
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>برای بررسی هر شرکت باید فرآیند تولید محصول یا خدمت آن شرکت کامل بشناسیم.</p>
+</div>
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>داشتن زمین زیاد برای شرکت‌هایی که براحتی نمی‌توانند خط تولیدشان را جابجا کنند مزیتی چندان به حساب نمی‌آید. اما برای شرکت‌های دامپروری که قابلیت جابجایی راحتتری دارند به طبع داشتن زمینی که ارزش اقتصادی پیدا کرده می‌تواند با اهمیت باشد.</p>
+</div>
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>محاسبه ظرفیت معدن برای شرکت‌های کامودیتی محور بسیار حائز اهمیت هست. عیار خاک ضرب در ظرفیت معدن می‌تواند برآوردی از کل ظرفیت موجود برای برداشت را بدهد. با دانستن میزان برداشت شرکت در هر سال می‌توان به تعداد سال‌هایی که شرکت امکان بهره برداری دارد دست پیدا کرد.</p>
+</div>
+</section>
+<section id="تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات"><span class="header-section-number">3.2</span> تحلیل تاریخی و برآورد درآمد فروش (نرخ محصولات)</h2>
+<section id="انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور"><span class="header-section-number">3.2.1</span> انتقال تجربیات ارزشگذاری در بازار سرمایه کشور</h3>
 <ul>
-<li>داشتن معدن با ظرفیت و عیار خاک خوب</li>
-<li>نزدیکی به جاده</li>
-<li>نزدیک به بازار مصرف</li>
+<li>فروش درون گروهی و برون گروهی
+<ul>
+<li>آیا فروش شرکت به صورت پایدار صورت می‌گیرد یا وابسته به شرایط می‌تواند دچار رکود و رونق شود.</li>
+</ul></li>
 </ul>
-<section id="تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="تحلیل-تاریخی-و-برآورد-درآمد-فروش-نرخ-محصولات"><span class="header-section-number">3.1.1</span> تحلیل تاریخی و برآورد درآمد فروش (نرخ محصولات)</h3>
-<section id="انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور" class="level4">
-<h4 class="anchored" data-anchor-id="انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور">انتقال تجربیات ارزشگذاری در بازار سرمایه کشور</h4>
+<div id="exm-1" class="example theorem">
+<p><span class="theorem-title"><strong>سوال 3.1 </strong></span>آیا همیشه تفکیک نمایش درآمد شرکت‌ها در بازار سرمایه کشور به صورت مقدار فروش ضربدر نرخ فروش است؟</p>
+</div>
 <ul>
 <li>نرخ ارز و نرخ تورم و قیمت نفت پایه تغییر قیمت بسیاری از شرکت‌های بورسی کشور (تغییر نرخ برونزا)</li>
-<li>نرخ محصولات و خدمات کمتر ناشی از تمایز (انحصار ناشی از بهتر بودن) تغییر می‌کند(تغییر نرخ درونزا)</li>
+<li>نرخ محصولات و خدمات کمتر ناشی از تمایز (انحصار ناشی از بهتر بودن) تغییر می‌کند (تغییر نرخ درونزا)</li>
 <li>تفکیک نرخ صادراتی از نرخ داخلی برای شرکت های صادرات محور</li>
 </ul>
 <div id="exm-1" class="example theorem">
-<p><span class="theorem-title"><strong>سوال 3.1 </strong></span>آیا شرکت‌های صادراتی محصولاتشان را با قیمت بالاتر صادر می‌کنند؟</p>
+<p><span class="theorem-title"><strong>سوال 3.2 </strong></span>آیا شرکت‌های صادراتی محصولاتشان را با قیمت بالاتر صادر می‌کنند؟</p>
 <div class="solution proof">
 <p><span class="proof-title"><em>پاسخ</em>. </span></p>
 <details>
@@ -260,7 +341,7 @@ ul.task-list li input[type="checkbox"] {
 <strong>نمایش</strong>
 </summary>
 <p>خیر.</p>
-اکثر شرکت‌های بورسی محصولاتشان را برای بازاریابی و اثر تحریم پایین‌تر از رقابیشان مجبورند بفروشند.
+اکثر شرکت‌های بورسی محصولاتشان را در بازارهای بین المللی برای بازاریابی و اثر تحریم پایین‌تر از رقابیشان مجبورند بفروشند. که در اکثر مواقع پایین‌تر از نرخ فروش داخلی است.
 </details>
 </div>
 </div>
@@ -273,44 +354,320 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <div id="exm-1" class="example theorem">
-<p><span class="theorem-title"><strong>سوال 3.2 </strong></span>چه محصولاتی خیلی زودتر از بقیه محصولات به افزایش قیمت دلار واکنش نشان می‌دهند.</p>
-<div class="solution proof">
-<p><span class="proof-title"><em>پاسخ</em>. </span></p>
-<details>
-<summary>
-<strong>نمایش</strong>
-</summary>
-</details>
-</div>
+<p><span class="theorem-title"><strong>سوال 3.3 </strong></span>چه محصولاتی خیلی زودتر از بقیه محصولات به افزایش قیمت دلار واکنش نشان می‌دهند.</p>
 </div>
 <div class="remark proof">
-<p><span class="proof-title"><em>نکته</em>. </span>شرکتی که بتواند هزینه‌های تولید را به سرعت از مشتریانش بگیرد و افزایش قیمت دهد در بازار قیمت بر سود بالاتری دارد.</p>
+<p><span class="proof-title"><em>نکته</em>. </span>شرکتی که بتواند افزایش هزینه‌های تولید را به سرعت از مشتریانش بگیرد و افزایش قیمت دهد در بازار قیمت بر سود بالاتری دارد.</p>
 </div>
 <div id="exm-1" class="example theorem">
-<p><span class="theorem-title"><strong>سوال 3.3 </strong></span>&nbsp;</p>
+<p><span class="theorem-title"><strong>سوال 3.4 </strong></span>&nbsp;</p>
 <ul>
 <li>قیمت مصوب سیمان را در ده سال گذشته چه بوده و چگونه تعیین می‌شود؟</li>
 <li>رابطه قیمت سیمان مصوب با نرخ تورم چه بوده؟</li>
 <li>اختلاف قیمت فروش شرکت سیمان اردستان با قیمت مصوب چقدر بوده است؟ چرا؟</li>
 </ul>
-<div class="solution proof">
-<p><span class="proof-title"><em>پاسخ</em>. </span></p>
-<details>
-<summary>
-<strong>نمایش</strong>
-</summary>
-</details>
+</div>
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>ارزشگذاری در سه کلمه خلاصه می‌شود.</p>
+<ul>
+<li>چرا؟</li>
+<li>چرا؟</li>
+<li>چرا؟</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="تحلیل-عملکرد-تاریخی-اردستان" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="تحلیل-عملکرد-تاریخی-اردستان"><span class="header-section-number">3.3</span> تحلیل عملکرد تاریخی اردستان</h2>
+<div class="definition">
+<p>صورت مالی سود و زیان رابه دو صورت عمودی و افقی می‌توان تحلیل کرد.</p>
+<ul>
+<li>تحلیل عمودی - هم مقیاس با فروش:
+<ul>
+<li>اگر تمام اقلام صورت مالی صورت سود و زیان را بر فروش تقسیم کنیم به نحوی آن‌ها را هم مقیاس کرده‌ایم.</li>
+</ul></li>
+<li>تحلیل افقی - رشد سالیانه:
+<ul>
+<li>اگر اقلام هر سال را تقسیم بر سال قبل کنیم می‌توانید تغییرات سالیانه آن قلم را بدست آوریم که روند سالیانه را می‌توانیم مقایشه کنیم.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tbl-incomestatement-ARDS1" class="anchored">
+<table class="table">
+<caption>جدول&nbsp;3.1: روند سالیانه صورت مالی سود و زیان شرکت سیمان اردستان (مبالغ برحسب میلیون ریال). <span class="citation" data-cites="bourseview"><a href="references.html#ref-bourseview" role="doc-biblioref">[1]</a></span>. </caption>
+<tbody>
+<tr class="odd">
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">صورت سود و زیان</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">هم مقیاس با فروش</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">رشد سالیانه</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cec6f745d0b4387559fd" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cec6f745d0b4387559fd">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"],["فروش","بهای تمام شده کالای فروش رفته","سود (زیان) ناخالص","هزینه های عمومی, اداری و تشکیلاتی","هزینه کاهش ارزش دریافتنی‌‏ها (هزینه استثنایی)","خالص سایر درامدها (هزینه ها) ی عملیاتی","سود (زیان) عملیاتی","هزینه های مالی","خالص سایر درامدها و هزینه های غیرعملیاتی","سود (زیان) خالص عملیات در حال تداوم قبل از مالیات","مالیات","سود (زیان) خالص عملیات در حال تداوم","سود (زیان) عملیات متوقف شده پس از اثر مالیاتی","سود (زیان) خالص","سود هر سهم پس از کسر مالیات","سرمایه","سود هر سهم بر اساس آخرین سرمایه"],[950887,-570757,380130,-37901,0,56,342285,-111581,22666,253370,-24126,229244,0,229244,5653,405525,202],[954919,-596681,358238,-43860,0,-145,314233,-98080,25761,241914,-7397,234517,0,234517,5783,405525,207],[1123636,-771151,352485,-65591,0,-238,286656,-87879,15967,214744,-7805,206939,0,206939,5103,405525,182],[1886818,-1207079,679739,-97675,0,1881,583945,-87887,51523,547581,-3398,544183,0,544183,9585,567735,479],[2827419,-1276080,1551339,-448493,0,-18206,1084640,-73141,250319,1261818,-14593,1247225,0,1247225,1099,1135000,1099],[4073674,-2121501,1952173,-285185,0,3721,1670709,-83643,174507,1761573,3701,1765274,0,1765274,1555,1135000,1555],[8576522,-3619273,4957249,-1478111,0,-969,3478169,-107883,894535,4264821,-26004,4238817,3736,4242553,3738,1135000,3738]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>مورد<\/th>\n      <th>1395<\/th>\n      <th>1396<\/th>\n      <th>1397<\/th>\n      <th>1398<\/th>\n      <th>1399<\/th>\n      <th>1400<\/th>\n      <th>1401<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["excel"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px','word-wrap':'break-word'});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-eecbbde31bfed15a0cb4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-eecbbde31bfed15a0cb4">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["فروش","بهای تمام شده کالای فروش رفته","سود (زیان) ناخالص","هزینه های عمومی, اداری و تشکیلاتی","هزینه کاهش ارزش دریافتنی‌‏ها (هزینه استثنایی)","خالص سایر درامدها (هزینه ها) ی عملیاتی","سود (زیان) عملیاتی","هزینه های مالی","خالص سایر درامدها و هزینه های غیرعملیاتی","سود (زیان) خالص عملیات در حال تداوم قبل از مالیات","مالیات","سود (زیان) خالص عملیات در حال تداوم","سود (زیان) عملیات متوقف شده پس از اثر مالیاتی","سود (زیان) خالص","سود هر سهم پس از کسر مالیات","سرمایه","سود هر سهم بر اساس آخرین سرمایه"],[100,-60.02,39.98,-3.99,0,0.01,36,-11.73,2.38,26.65,-2.54,24.11,0,24.11,0.59,42.65,0.02],[100,-62.48,37.52,-4.59,0,-0.02,32.91,-10.27,2.7,25.33,-0.77,24.56,0,24.56,0.61,42.47,0.02],[100,-68.63,31.37,-5.84,0,-0.02,25.51,-7.82,1.42,19.11,-0.69,18.42,0,18.42,0.45,36.09,0.02],[100,-63.97,36.03,-5.18,0,0.1,30.95,-4.66,2.73,29.02,-0.18,28.84,0,28.84,0.51,30.09,0.03],[100,-45.13,54.87,-15.86,0,-0.64,38.36,-2.59,8.85,44.63,-0.52,44.11,0,44.11,0.04,40.14,0.04],[100,-52.08,47.92,-7,0,0.09,41.01,-2.05,4.28,43.24,0.09,43.33,0,43.33,0.04,27.86,0.04],[100,-42.2,57.8,-17.23,0,-0.01,40.55,-1.26,10.43,49.73,-0.3,49.42,0.04,49.47,0.04,13.23,0.04]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>1395<\/th>\n      <th>1396<\/th>\n      <th>1397<\/th>\n      <th>1398<\/th>\n      <th>1399<\/th>\n      <th>1400<\/th>\n      <th>1401<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["excel"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px','word-wrap':'break-word'});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-54ef08a1be75887f3bc5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-54ef08a1be75887f3bc5">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["فروش","بهای تمام شده کالای فروش رفته","سود (زیان) ناخالص","هزینه های عمومی, اداری و تشکیلاتی","هزینه کاهش ارزش دریافتنی‌‏ها (هزینه استثنایی)","خالص سایر درامدها (هزینه ها) ی عملیاتی","سود (زیان) عملیاتی","هزینه های مالی","خالص سایر درامدها و هزینه های غیرعملیاتی","سود (زیان) خالص عملیات در حال تداوم قبل از مالیات","مالیات","سود (زیان) خالص عملیات در حال تداوم","سود (زیان) عملیات متوقف شده پس از اثر مالیاتی","سود (زیان) خالص","سود هر سهم پس از کسر مالیات","سرمایه","سود هر سهم بر اساس آخرین سرمایه"],[0.42,4.54,-5.76,15.72,0,-358.93,-8.2,-12.1,13.65,-4.52,-69.34,2.3,0,2.3,2.3,0,2.48],[17.67,29.24,-1.61,49.55,0,64.14,-8.78,-10.4,-38.02,-11.23,5.52,-11.76,0,-11.76,-11.76,0,-12.08],[67.92,56.53,92.84,48.92,0,-890.34,103.71,0.01,222.68,154.99,-56.46,162.97,0,162.97,87.83,40,163.19],[49.85,5.72,128.23,359.17,0,-1067.89,85.74,-16.78,385.84,130.43,329.46,129.19,0,129.19,-88.53,99.92,129.44],[44.08,66.25,25.84,-36.41,0,-120.44,54.03,14.36,-30.29,39.61,-125.36,41.54,0,41.54,41.49,0,41.49],[110.54,70.6,153.93,418.3,0,-126.04,108.19,28.98,412.61,142.1,-802.62,140.12,null,140.33,140.39,0,140.39]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>1396<\/th>\n      <th>1397<\/th>\n      <th>1398<\/th>\n      <th>1399<\/th>\n      <th>1400<\/th>\n      <th>1401<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["excel"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px','word-wrap':'break-word'});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
+<section id="تحلیل-مقدار-فروش-تاریخی-اردستان" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="تحلیل-مقدار-فروش-تاریخی-اردستان"><span class="header-section-number">3.4</span> تحلیل مقدار فروش تاریخی اردستان</h2>
+<div id="tbl-the-amount-of-production-and-sales-ARDS1" class="anchored">
+<table class="table">
+<caption>جدول&nbsp;3.2: روند سالیانه مقدار تولید و فروش شرکت سیمان اردستان <span class="citation" data-cites="bourseview"><a href="references.html#ref-bourseview" role="doc-biblioref">[1]</a></span>. </caption>
+<tbody>
+<tr class="odd">
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">جدول</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">نمودار</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-3995b8b488bde7f5e17f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3995b8b488bde7f5e17f">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4"],["مقدار تولید\n(تن)","مقدار تولید\n(تن)","مقدار فروش\n(تن)","مقدار فروش\n(تن)"],["سیمان","کلینکر","سیمان","کلینکر"],[844180,134306,839108,134306],[945954,0,947363,296804],[982120,0,985983,216622],[0,0,991550,49212],[1891832,1079378,947485,296061]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>نوع<\/th>\n      <th>مورد<\/th>\n      <th>1397<\/th>\n      <th>1398<\/th>\n      <th>1399<\/th>\n      <th>1400<\/th>\n      <th>1401<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["excel"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px','word-wrap':'break-word'});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell">
+<div id="fig-the-amount-of-production-and-sales-ARDS1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-e062b2a55fb34a53181a" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-e062b2a55fb34a53181a">{"x":{"data":[{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[0.8,1.8],"y":[844180,839108],"text":["نوع: تولید<br />(تن)<br />مقدار:  844180<br />مورد: سیمان","نوع: فروش<br />(تن)<br />مقدار:  839108<br />مورد: سیمان"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(174,68,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"سیمان","legendgroup":"سیمان","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[0.8,1.8],"y":[945954,947363],"text":["نوع: تولید<br />(تن)<br />مقدار:  945954<br />مورد: سیمان","نوع: فروش<br />(تن)<br />مقدار:  947363<br />مورد: سیمان"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(174,68,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"سیمان","legendgroup":"سیمان","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[0.8,1.8],"y":[982120,985983],"text":["نوع: تولید<br />(تن)<br />مقدار:  982120<br />مورد: سیمان","نوع: فروش<br />(تن)<br />مقدار:  985983<br />مورد: سیمان"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(174,68,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"سیمان","legendgroup":"سیمان","showlegend":false,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[0.8,1.8],"y":[0,991550],"text":["نوع: تولید<br />(تن)<br />مقدار:       0<br />مورد: سیمان","نوع: فروش<br />(تن)<br />مقدار:  991550<br />مورد: سیمان"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(174,68,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"سیمان","legendgroup":"سیمان","showlegend":false,"xaxis":"x4","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[0.8,1.8],"y":[1891832,947485],"text":["نوع: تولید<br />(تن)<br />مقدار: 1891832<br />مورد: سیمان","نوع: فروش<br />(تن)<br />مقدار:  947485<br />مورد: سیمان"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(174,68,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"سیمان","legendgroup":"سیمان","showlegend":false,"xaxis":"x5","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[1.2,2.2],"y":[134306,134306],"text":["نوع: تولید<br />(تن)<br />مقدار:  134306<br />مورد: کلینکر","نوع: فروش<br />(تن)<br />مقدار:  134306<br />مورد: کلینکر"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(243,159,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"کلینکر","legendgroup":"کلینکر","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[1.2,2.2],"y":[0,296804],"text":["نوع: تولید<br />(تن)<br />مقدار:       0<br />مورد: کلینکر","نوع: فروش<br />(تن)<br />مقدار:  296804<br />مورد: کلینکر"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(243,159,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"کلینکر","legendgroup":"کلینکر","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[1.2,2.2],"y":[0,216622],"text":["نوع: تولید<br />(تن)<br />مقدار:       0<br />مورد: کلینکر","نوع: فروش<br />(تن)<br />مقدار:  216622<br />مورد: کلینکر"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(243,159,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"کلینکر","legendgroup":"کلینکر","showlegend":false,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[1.2,2.2],"y":[0,49212],"text":["نوع: تولید<br />(تن)<br />مقدار:       0<br />مورد: کلینکر","نوع: فروش<br />(تن)<br />مقدار:   49212<br />مورد: کلینکر"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(243,159,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"کلینکر","legendgroup":"کلینکر","showlegend":false,"xaxis":"x4","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.4,0.4],"base":[0,0],"x":[1.2,2.2],"y":[1079378,296061],"text":["نوع: تولید<br />(تن)<br />مقدار: 1079378<br />مورد: کلینکر","نوع: فروش<br />(تن)<br />مقدار:  296061<br />مورد: کلینکر"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(243,159,90,1)","line":{"width":1.88976377952756,"color":"transparent"}},"name":"کلینکر","legendgroup":"کلینکر","showlegend":false,"xaxis":"x5","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.4,2.6],"y":[0,0],"text":"yintercept: 0","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.4,2.6],"y":[0,0],"text":"yintercept: 0","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x2","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.4,2.6],"y":[0,0],"text":"yintercept: 0","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x3","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.4,2.6],"y":[0,0],"text":"yintercept: 0","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x4","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.4,2.6],"y":[0,0],"text":"yintercept: 0","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x5","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":37.9178082191781,"r":18.9954337899543,"b":25.5707762557078,"l":34.337899543379},"font":{"color":"rgba(0,0,0,1)","family":"Vazirmatn","size":14.6118721461187},"xaxis":{"domain":[0,0.189128071319852],"automargin":true,"type":"linear","autorange":false,"range":[0.4,2.6],"tickmode":"array","ticktext":["تولید<br />(تن)","فروش<br />(تن)"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["تولید<br />(تن)","فروش<br />(تن)"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-94591.6,1986423.6],"tickmode":"array","ticktext":["0","500K","1.0M","1.5M"],"tickvals":[0,500000,1000000,1500000],"categoryorder":"array","categoryarray":["0","500K","1.0M","1.5M"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":"","hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.189128071319852,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":0.189128071319852,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.210871928680148,"x1":0.389128071319852,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.210871928680148,"x1":0.389128071319852,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.410871928680148,"x1":0.589128071319852,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.410871928680148,"x1":0.589128071319852,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.610871928680148,"x1":0.789128071319852,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.610871928680148,"x1":0.789128071319852,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.810871928680148,"x1":1,"y0":0,"y1":1},{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0.810871928680148,"x1":1,"y0":0,"y1":23.37899543379,"yanchor":1,"ysizemode":"pixel"}],"annotations":[{"text":"1397","x":0.0945640356599261,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"1398","x":0.3,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"1399","x":0.5,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"1400","x":0.7,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"},{"text":"1401","x":0.905435964340074,"y":1,"showarrow":false,"ax":0,"ay":0,"font":{"color":"rgba(26,26,26,1)","family":"","size":11.689497716895},"xref":"paper","yref":"paper","textangle":-0,"xanchor":"center","yanchor":"bottom"}],"xaxis2":{"type":"linear","autorange":false,"range":[0.4,2.6],"tickmode":"array","ticktext":["تولید<br />(تن)","فروش<br />(تن)"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["تولید<br />(تن)","فروش<br />(تن)"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.210871928680148,0.389128071319852],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis3":{"type":"linear","autorange":false,"range":[0.4,2.6],"tickmode":"array","ticktext":["تولید<br />(تن)","فروش<br />(تن)"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["تولید<br />(تن)","فروش<br />(تن)"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.410871928680148,0.589128071319852],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis4":{"type":"linear","autorange":false,"range":[0.4,2.6],"tickmode":"array","ticktext":["تولید<br />(تن)","فروش<br />(تن)"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["تولید<br />(تن)","فروش<br />(تن)"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.610871928680148,0.789128071319852],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"xaxis5":{"type":"linear","autorange":false,"range":[0.4,2.6],"tickmode":"array","ticktext":["تولید<br />(تن)","فروش<br />(تن)"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["تولید<br />(تن)","فروش<br />(تن)"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"domain":[0.810871928680148,1],"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"","hoverformat":".2f"},"showlegend":true,"legend":{"bgcolor":"ffffff00","bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Vazirmatn","size":11.689497716895},"title":{"text":"","font":"Vazirmatn","align":"right","direction":"rtl"},"orientation":"v","x":0.1,"y":0.9},"hovermode":"closest","barmode":"relative","plot_bgcolor":"#ffffff00","paper_bgcolor":"#ffffff00","hoverlabel":{"direction":"rtl","align":"right","family":"Vazirmatn"}},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"8c3046291995":{"x":{},"y":{},"fill":{},"type":"bar"},"8c3051dffc79":{"yintercept":{}}},"cur_data":"8c3046291995","visdat":{"8c3046291995":["function (y) ","x"],"8c3051dffc79":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+<figcaption class="figure-caption">شکل&nbsp;3.1: روند سالیانه مقدار تولید و فروش شرکت سیمان اردستان <span class="citation" data-cites="bourseview"><a href="references.html#ref-bourseview" role="doc-biblioref">[1]</a></span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>شرکت حدود ۱۰۰ درصد از تولیدات سیمان خود را به فروش می‌رساند.</li>
+<li>بخش اصلی فروش شرکت سیمان (سیمان تیپ دو) می‌باشد.</li>
+<li>کلینکر تولیدی شرکت عمدتا در خط تولید سیمان مصرف می‌شود.</li>
+<li>سیاست کلی شرکت مصرف کلینکر برای تولید سیمان می‌باشد چرا که عمدتا حاشیه سود بیشتری را برای سیمان اردستاندارد.</li>
+<li>به طور میانگین کلینکر فروش رفته از سال ۱۳۹۷ تا ۱۴۰۰ حدود ۱۷ درصد تولیدات بوده است.</li>
+<li>شرکت از تاریخ ۲۰ تیر ۱۴۰۰ ملزم به فروش سیمان در بورس کالا با حداقل مقدار عرضه ۱۷۰۰۰ تن می‌باشد.</li>
+</ul>
+</section>
+<section id="تحلیل-نرخ-فروش-تاریخی-اردستان" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="تحلیل-نرخ-فروش-تاریخی-اردستان"><span class="header-section-number">3.5</span> تحلیل نرخ فروش تاریخی اردستان</h2>
+<ul>
+<li>اختلاف قیمت سیمان فله و پاکتی مربوط به قیمت پاکت می‌باشد که این اختلاف از ۵۰۰ هزار ریال در سال ۱۳۹۹ به ۱۲۵۰ هزار ریال (بیش از سه برابر) در سال ۱۴۰۰ رسیده است.</li>
+<li>معامله سیمان در بورس کالا با قیمت پایه نرخ مصوب و در نهایت قیمت معاملاتی با توجه به عرضه و تقاضا خواهد بود.</li>
+<li>در صورت عرضه خارج از بورس سقف قیمت معاملاتی نباید بیشتر از نرخ مصوب سیمان باشد.</li>
+</ul>
+<!-- TODO: #1 Add plot for type of cement prices -->
+</section>
+<section id="تحلیل-تاریخی-مبغ-فروش" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="تحلیل-تاریخی-مبغ-فروش"><span class="header-section-number">3.6</span> تحلیل تاریخی مبغ فروش</h2>
+<ul>
+<li>نرخ رشد مرکب سالانه ۲۰٪ فروش ناخالص از سال ۱۳۹۴ تا ۱۴۰۰</li>
+<li>روند نزولی برگشت از فروش و تخفیفات به دلیل بهبود وضعت بازار عرضه و تقاضای سیمان و عدم اعمال تخفیفات بیشتر جهت فروش سیمان تولیدی از اوایل سال</li>
+</ul>
+<!-- TODO: #2 Add plot for type of cement sales -->
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>شناخت کسب و کار و جواب به چرایی‌ها دیرتر توسط هوش مصنوعی جایگزین می‌شود.</p>
+</div>
+</section>
+<section id="مفروضات-برآورد-صورت-سود-و-زیان-شرکت" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="مفروضات-برآورد-صورت-سود-و-زیان-شرکت"><span class="header-section-number">3.7</span> مفروضات برآورد صورت سود و زیان شرکت</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-assumptions-of-profit-and-loss-statement-estimation" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./img/assumptions-of-profit-and-loss-statement-estimation.png" class="img-fluid figure-img" width="1412"></p>
+<figcaption class="figure-caption">شکل&nbsp;3.2: مفروضات برآورد صورت سود و زیان <span class="citation" data-cites="valuation-skills-development-course"><a href="references.html#ref-valuation-skills-development-course" role="doc-biblioref">[2]</a></span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="شیوه-کلان-تحلیل-درآمد-فروش-در-شرکتهای-بازار-سرمایه-کشور" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="شیوه-کلان-تحلیل-درآمد-فروش-در-شرکتهای-بازار-سرمایه-کشور"><span class="header-section-number">3.8</span> شیوه کلان تحلیل درآمد فروش در شرکت‌های بازار سرمایه کشور</h2>
+<section id="انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور-1" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="انتقال-تجربیات-ارزشگذاری-در-بازار-سرمایه-کشور-1"><span class="header-section-number">3.8.1</span> انتقال تجربیات ارزشگذاری در بازار سرمایه کشور</h3>
+<div id="exm-1" class="example theorem">
+<p><span class="theorem-title"><strong>سوال 3.5 </strong></span>سوالات مهم در خصوص درآمد‌های فروش</p>
+<ol type="1">
+<li>فروش محصولات شرکت به بخش دولتی باشد بهتر است یا خصوصی؟</li>
+<li>مشتری‌های شرکت متنوع باشد بهتر است یا انحصاری؟</li>
+<li>درآمد فروش شرکت داخلی باشد بهتر است یا صادراتی؟</li>
+<li>رشد درآمد فروش شرکت ناشی از متغیر حقیقی (مقداری) باشد بهتر است یا متغیر اسمی (نرخ)?</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="رابطه-درآمد-فروش-و-هزینهها-و-داراییها" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="رابطه-درآمد-فروش-و-هزینهها-و-داراییها"><span class="header-section-number">3.9</span> رابطه درآمد فروش و هزینه‌ها و دارایی‌ها</h2>
+<section id="شیوه-کلان-تحلیل-هزینهها-در-شرکتهای-بازار-سرمایه-کشور" class="level3" data-number="3.9.1">
+<h3 data-number="3.9.1" class="anchored" data-anchor-id="شیوه-کلان-تحلیل-هزینهها-در-شرکتهای-بازار-سرمایه-کشور"><span class="header-section-number">3.9.1</span> شیوه کلان تحلیل هزینه‌ها در شرکت‌های بازار سرمایه کشور</h3>
+<p>####&nbsp;انواع هزینه‌ها در صورت سود و زیان</p>
+<div class="cell">
+<div id="fig-types-of-expenses-in-the-profit-and-loss-statement" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-bd81b81789bb04cff506" style="width:100%;height:338px;"></div>
+<script type="application/json" data-for="htmlwidget-bd81b81789bb04cff506">{"x":{"diagram":"digraph {\n    graph [fontname=\"Vazirmatn\"]\n    node [fontname=\"Vazirmatn\"]\n    edge [fontname=\"Vazirmatn\"]\n\n    node [width=4 shape=\"rectangel\" style=\"filled\"]\n    a1 [color=\"#A9107980\" label=\"۱. بهای تمام شده کالای فروش رفته\nCost Of Goods Sold\n(COGS)\"]\n    a2 [color=\"#A9107980\" label=\"۲. هزینه‌های فروش، عمومی و اداری\nSelling General & Administrative expenses\n(SG&A)\"]\n    a3 [color=\"#A9107980\" label=\"۳. هزینه (بهره) تسهیلات مالی\nInterest Expense\"]\n    a4 [color=\"#A9107980\" label=\"۴. مالیات\nTax\"]\n\n    edge [arrowhead=\"vee\" len=1]\n    a1 -> a2 -> a3 -> a4\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+<figcaption class="figure-caption">شکل&nbsp;3.3: انواع هزینه‌ها در صورت سود و زیان <span class="citation" data-cites="valuation-skills-development-course"><a href="references.html#ref-valuation-skills-development-course" role="doc-biblioref">[2]</a></span></figcaption>
+</figure>
+</div>
+</div>
+<div id="exm-1" class="example theorem">
+<p><span class="theorem-title"><strong>سوال 3.6 </strong></span>آیا همیشه تفکیک نمایش هزینه‌ها شرکت‌ها در بازار سرمایه کشور به صورت ردیف‌های بالاست؟</p>
+</div>
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>صورت‌های مالی نباید به صورت خام استفاده شود و باید قبل از تحلیل آن را پالایش کنیم.</p>
+</div>
+<div id="tbl-the-difference-in-the-expenses-of-the-profit-and-loss-statement-in-different-companies" class="anchored">
+<table class="table">
+<caption>جدول&nbsp;3.3: تفاوت هزینه‌های صورت سود و زیاد در شرکت‌های مختلف <span class="citation" data-cites="valuation-skills-development-course"><a href="references.html#ref-valuation-skills-development-course" role="doc-biblioref">[2]</a></span>. </caption>
+<tbody>
+<tr class="odd">
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2c8a89f21319843c89bb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2c8a89f21319843c89bb">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["1","2","3","4","5","6"],["درآمد","بهای تمام شده کالای فروش رفته","هزینه عمومی، اداری و فروش","هزینه مالی","مالیات","حاشیه سود خالص (تقریبی)"],[100,55,15,1,null,30],[100,null,13,null,2,85],[100,25,20,null,null,55],[100,82,17,null,null,3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>مقادیر برحسب درصد<\/th>\n      <th>سیمان اردستان<\/th>\n      <th>تامین سرمایه<\/th>\n      <th>کافه بازار<\/th>\n      <th>دیجی کالا<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["excel"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'12px','word-wrap':'break-word'});\n}"},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+</div>
+<div class="remark proof">
+<p><span class="proof-title"><em>نکته</em>. </span>بیزینس مدل و استراتژی شرکت روی عملکرد و صورت وضعیت مالی آن طی سال‌های مختلف تاثیر دارد.</p>
+</div>
+<div id="exm-1" class="example theorem">
+<p><span class="theorem-title"><strong>سوال 3.7 </strong></span>سوالات مهم در خصوص هزینه‌ها</p>
+<ol type="1">
+<li>تمام دارایی‌ها و هزینه‌ها در شرکت‌ها معظوف به کدام ردیف از صورت‌های مالی است؟</li>
+<li>چند مدل حاشیه سود داریم؟
+<ol type="1">
+<li>کدام یک از منظر ارزشگذاری و شناخت کسب و کار اهمیت بالایی دارند؟</li>
+<li>چرا حاشیه سود بالا/پایین از منظر ریسک در ارزشگذاری اهمیت دارد؟</li>
+</ol></li>
+<li>حاشیه سود بالا و حاشیه سود پایین از منظر ارزش افزوده شرکت‌ها بیانگر چیست؟</li>
+<li>رابظه رشد درآمد‌ها و رشد هزینه‌ها در شرکت‌ها و تاثیر آن بر ارزش سهام شرکت‌ها چیست؟</li>
+<li>با چه شدتی رابطه هزینه با درآمد فروش از ردیف ۱ به ۴ کاهش می‌یابد?</li>
+</ol>
+</div>
+</section>
+<section id="بهای-تمام-شده-کالای-فروش-رفته-شرکتهای-تولیدی" class="level3" data-number="3.9.2">
+<h3 data-number="3.9.2" class="anchored" data-anchor-id="بهای-تمام-شده-کالای-فروش-رفته-شرکتهای-تولیدی"><span class="header-section-number">3.9.2</span> بهای تمام شده کالای فروش رفته شرکت‌های تولیدی</h3>
+<div class="cell">
+<div id="fig-cost-of-goods-sold-by-manufacturing-companies" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container" data-bslib-card-init="" data-full-screen="false" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-631fe431673c5f094939" style="width:100%;height:338px;"></div>
+<script type="application/json" data-for="htmlwidget-631fe431673c5f094939">{"x":{"diagram":"digraph {\n    graph [fontname=\"Vazirmatn\"]\n    node [fontname=\"Vazirmatn\" style=\"filled\"]\n    edge [fontname=\"Vazirmatn\"]\n\n    node [width=1 shape=\"rectangel\"]\n    a1 [color=\"#A9107980\" label=\"مواد\nمستقیم\"]\n    a2 [color=\"#A9107980\" label=\"دستمزد\nمستقیم\"]\n    a3 [color=\"#A9107980\" label=\"سربار\nساخت\"]\n\n    node [width=2 shape=\"circle\" fixedsize=true]\n    a4 [color=\"#A9107980\" label=\"بهای تمام شده\nکالای فروش\nرفته\"]\n\n    edge [arrowhead=\"vee\" len=1]\n    {a1, a2, a3} -> a4\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<template>Expand</template>
+<span class="bslib-full-screen-enter badge rounded-pill bg-dark"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-arrows-fullscreen " style="height:1em;width:1em;fill:currentColor;" aria-hidden="true" role="img"><path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"></path></svg></span>
+</bslib-tooltip>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+<figcaption class="figure-caption">شکل&nbsp;3.4: بهای تمام شده کالای فروش رفته شرکت‌های تولیدی <span class="citation" data-cites="valuation-skills-development-course"><a href="references.html#ref-valuation-skills-development-course" role="doc-biblioref">[2]</a></span>]</figcaption>
+</figure>
+</div>
+</div>
 </section>
 </section>
 <section id="تکلیف-جلسه-سوم" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="تکلیف-جلسه-سوم">تکلیف جلسه سوم</h2>
-<section id="اجباری" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="اجباری"><span class="header-section-number">3.1.2</span> اجباری</h3>
 <div id="exr-1" class="exercise theorem">
-<p><span class="theorem-title"><strong>تمرین 3.1 </strong></span>متن …</p>
+<p><span class="theorem-title"><strong>تمرین 3.1 </strong></span>مقایسه سیمان اردستان با بقیه سیمانی‌های ۱ میلیون تنی از نظر میزان فروش در سال ۱۴۰۱.</p>
 <div class="solution proof">
 <p><span class="proof-title"><em>پاسخ</em>. </span></p>
 <details>
@@ -321,11 +678,44 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </div>
 </div>
-</section>
-<section id="اختیاری" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="اختیاری"><span class="header-section-number">3.1.3</span> اختیاری</h3>
 <div id="exr-1" class="exercise theorem">
-<p><span class="theorem-title"><strong>تمرین 3.2 </strong></span>متن …</p>
+<p><span class="theorem-title"><strong>تمرین 3.2 </strong></span>تکمیل فروش و بهای تمام شده سیمان اردستان و رسیدن به سود ناخالص پیش‌بینی برای سالهای ۱۴۰۲ تا ۱۴۰۵ مطابق فایل اکسل ارسالی.</p>
+<div class="solution proof">
+<p><span class="proof-title"><em>پاسخ</em>. </span></p>
+<details>
+<summary>
+<strong>نمایش</strong>
+</summary>
+پاسخ …
+</details>
+</div>
+</div>
+<div id="exr-1" class="exercise theorem">
+<p><span class="theorem-title"><strong>تمرین 3.3 </strong></span>چه اتفاقی باعث رشد حاشیه سود خالص سیمان اردستان طی سال‌های اخیر نسبت به سال‌های قبل شده است؟</p>
+<div class="solution proof">
+<p><span class="proof-title"><em>پاسخ</em>. </span></p>
+<details>
+<summary>
+<strong>نمایش</strong>
+</summary>
+پاسخ …
+</details>
+</div>
+</div>
+<div id="exr-1" class="exercise theorem">
+<p><span class="theorem-title"><strong>تمرین 3.4 </strong></span>چرا در دوره‌های مختلف، درصد هزینه‌های فروش، اداری و عمومی متفاوت می‌شود؟</p>
+<div class="solution proof">
+<p><span class="proof-title"><em>پاسخ</em>. </span></p>
+<details>
+<summary>
+<strong>نمایش</strong>
+</summary>
+پاسخ …
+</details>
+</div>
+</div>
+<div id="exr-1" class="exercise theorem">
+<p><span class="theorem-title"><strong>تمرین 3.5 </strong></span>مولفه‌های بهای تمام شده چه نسبت‌های هم مقیاسی از کل بهای تمام شده را شامل می‌شود؟ این نسبت‌ها را برای ۵ سال اخیر اردستان، شصدف، شپنا، شاراک و ددانا محاسبه کنید.</p>
 <div class="solution proof">
 <p><span class="proof-title"><em>پاسخ</em>. </span></p>
 <details>
@@ -338,7 +728,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-</section>
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-bourseview" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline"><span>“بورس ویو.”</span> <a href="https://www.bourseview.com/">https://www.bourseview.com/</a></div>
+</div>
+<div id="ref-valuation-skills-development-course" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">عباس گمار، مژده بادی‌اللهی، محمد نادری، سمیه فریدونی، علیرضا فرشید، محمدمهدی رزمه‌گیر, <span>“توسعه مهارت‌های ارزشگذاری,”</span> مرکز مالی ایران، مدرسه ارزشگذاری, 2013. Available at: <a href="https://ifc.ir/valuation-skills-development-course/">https://ifc.ir/valuation-skills-development-course/</a></div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -833,12 +1230,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./02.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۱</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">اردستان-۱</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./04.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">تحلیل و ارزشگذاری سیمان اردستان-۳</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">اردستان-۳</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
